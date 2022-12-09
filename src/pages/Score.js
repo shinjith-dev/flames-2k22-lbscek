@@ -11,10 +11,13 @@ const Score = () => {
   useEffect(() => {
     getData("score").then((data) => {
       if (data !== null) {
+        const filtered = data.filter((item, index) => index !== 0);
         setScores(
-          data
-            .filter((item, index) => index !== 0)
-            .sort((a, b) => Number(a[2]) < Number(b[2]))
+          filtered.sort((a, b) => {
+            if (Number(a[2]) < Number(b[2])) {
+              return 1;
+            } else return 0;
+          })
         );
         setLoading(false);
       }
