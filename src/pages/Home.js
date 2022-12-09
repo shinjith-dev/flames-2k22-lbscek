@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Header from "../components/Header";
 import RunningAnimation from "../components/runningAnimation/RunningAnimation";
+import CreditPopup from "../components/Credits";
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
         <p className="fw-lighter text-center " style={{fontSize:"0.8rem"}}>COLLEGE UNION 2022 LBSCEK</p>
       </div>
 
-      <div className="gap-2 hstack mx-auto justify-content-center mt-5">
+      <div className="gap-2 hstack mx-auto justify-content-center mt-4">
         <Link to="/events">
           <Button type="button" variant="dark">Events</Button>
         </Link>
@@ -32,6 +33,9 @@ const Home = () => {
           <Button type="button" variant="dark">Score</Button>
         </Link>
       </div>
+      <div className="mt-3">
+      <CreditPopup/>
+     </div>
     </Container>
     </>
   );

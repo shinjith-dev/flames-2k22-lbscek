@@ -27,4 +27,4 @@ useEffect(()=>{
   );
 }
 
-export default ResultPopup
+export default ResultPopup;
