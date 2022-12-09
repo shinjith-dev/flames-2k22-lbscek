@@ -28,7 +28,6 @@ const ResultsList = ({ type = "men" }) => {
   const onItemClick = (e) => {
     let index = Number(String(e.target.id).slice(15));
     setShowPopup((prev) => ({
-      ...prev,
       show: true,
       data: rawResult.slice(index * 2, index * 2 + 2),
     }));
