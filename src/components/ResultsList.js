@@ -10,6 +10,7 @@ const ResultsList = ({ type = "men" }) => {
   const [rawResult, setRawResult] = useState([]);
   const [showPopup, setShowPopup] = useState({ show: false, data: [] });
   const [loading, setLoading] = useState(true);
+  const [popupData, setPopupData] = useState([]);
 
   useEffect(() => {
     getData(`result${type}`).then((data) => {
@@ -21,6 +22,10 @@ const ResultsList = ({ type = "men" }) => {
     });
   }, []);
 
+  useEffect(() => {
+    setPopupData([...rawResult]);
+  }, [rawResult]);
+
   const handleClosePopup = () => {
     setShowPopup((prev) => ({ ...prev, show: false }));
   };
@@ -29,7 +34,7 @@ const ResultsList = ({ type = "men" }) => {
     let index = Number(String(e.target.id).slice(15));
     setShowPopup((prev) => ({
       show: true,
-      data: rawResult.slice(index * 2, index * 2 + 2),
+      data: popupData.slice(index * 2, index * 2 + 2),
     }));
   };
 
@@ -69,7 +74,7 @@ const ResultsList = ({ type = "men" }) => {
               closePopup={() => handleClosePopup()}
             />
           )}
-          <p className="text-end mt-1" style={{fontSize:"0.8rem"}}>
+          <p className="text-end mt-1" style={{ fontSize: "0.8rem" }}>
             *To see the winners, click on the list item
           </p>
         </>
