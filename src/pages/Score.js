@@ -14,9 +14,7 @@ const Score = () => {
         const filtered = data.filter((item, index) => index !== 0);
         setScores(
           filtered.sort((a, b) => {
-            if (Number(a[2]) < Number(b[2])) {
-              return 1;
-            } else return 0;
+            return Number(b[2]) - Number(a[2]);
           })
         );
         setLoading(false);
