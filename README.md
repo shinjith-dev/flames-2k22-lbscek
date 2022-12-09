@@ -1,3 +1,1 @@
-# flames-2k22-lbscek
-
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-gmg2rk)
+Flames 2k22
