@@ -4,6 +4,7 @@ import logo from "../images/hi.png";
 import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Header from "../components/Header";
+import RunningAnimation from "../components/runningAnimation/RunningAnimation";
 
 const Home = () => {
   return (
@@ -11,9 +12,10 @@ const Home = () => {
    
     <Container className="position-absolute top-50 start-50 translate-middle">
       <div className="d-flex flex-column align-items-center">
-        <div className="spinner-border mb-2" role="status">
+        {/* <div className="spinner-border mb-2" role="status">
           <p>-----</p>
-        </div>
+        </div> */}
+        <RunningAnimation/>
         <div className="h1 text-center fw-bold mb-1" style={{fontSize:"3rem"}}>FLAMES'22</div>
         <p className="fw-light text-center fs-6 mb-0">Annual Athletic Meet</p>
         <p className="fw-lighter text-center " style={{fontSize:"0.8rem"}}>COLLEGE UNION 2022 LBSCEK</p>
