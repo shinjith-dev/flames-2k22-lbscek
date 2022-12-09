@@ -11,10 +11,7 @@ import Header from "../components/Header";
 function Results() {
   const [selectedTab,setSelectedTab] = useState('men')
   return (
-    <div>
-     <Container>
-      <Header/>
-    </Container>
+    <div className="pt-5">
     <Container>
       <Tabs
         defaultActiveKey="men"

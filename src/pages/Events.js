@@ -4,11 +4,10 @@ import EventsList from '../components/EventsList'
 
 const Events = () => {
   return (
-    <div>
+    <div className="pt-5">
       <Container>
-        <Tabs  variant="pills" 
+        <Tabs 
           defaultActiveKey="men"
-          id="uncontrolled-tab-example"
           className="mb-3"
         >
           <Tab eventKey="men" title="Men">

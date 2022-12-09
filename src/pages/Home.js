@@ -11,15 +11,15 @@ const Home = () => {
    
     <Container className="position-absolute top-50 start-50 translate-middle">
       <div className="d-flex flex-column align-items-center">
-        <div class="spinner-border mb-2" role="status">
+        <div className="spinner-border mb-2" role="status">
           <p>-----</p>
         </div>
-        <div class="h1 text-center fw-bold" style={{fontSize:"3rem"}}>FLAMES'22</div>
+        <div className="h1 text-center fw-bold" style={{fontSize:"3rem"}}>FLAMES'22</div>
 
-        <p class="fw-lighter text-center fs-6">Annual Athletic Meet</p>
+        <p className="fw-lighter text-center fs-6">Annual Athletic Meet</p>
       </div>
 
-      <div class="gap-2 hstack mx-auto justify-content-center mt-5">
+      <div className="gap-2 hstack mx-auto justify-content-center mt-5">
         <Link to="/events">
           <Button type="button" variant="dark">Events</Button>
         </Link>
