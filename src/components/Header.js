@@ -7,7 +7,7 @@ const Header = () => {
   const location = useLocation()
   return (
     <div>
- hi
+ 
     </div>
   )
 }
