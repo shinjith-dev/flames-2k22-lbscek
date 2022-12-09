@@ -70,7 +70,7 @@ const ResultsList = ({ type = "men" }) => {
               closePopup={() => handleClosePopup()}
             />
           )}
-          <p className="text-end mt-1">
+          <p className="text-end mt-1" style={{fontSize:"0.8rem"}}>
             *To see the winners, click on the list item
           </p>
         </>
