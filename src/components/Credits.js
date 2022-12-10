@@ -2,6 +2,7 @@ import Button from "react-bootstrap/Button";
 import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Popover from "react-bootstrap/Popover";
 import ListGroup from "react-bootstrap/ListGroup";
+import anjaliImg from '../images/profile.png'
 
 const popover = (
   <Popover id="popover-basic">
@@ -16,7 +17,7 @@ const popover = (
             alt="TinkerHub Logo"
             src="https://media.discordapp.net/attachments/883626663160729601/1051033216494084168/IMG_20221210_124025.jpg"
             className="rounded-rectangle me-1"
-            style={{ width: "4rem", height: "4rem" }}
+            style={{ width: "3rem", height: "3rem" }}
           />
           
         </a>
@@ -28,7 +29,7 @@ const popover = (
             alt="Mulearn Logo"
             src="https://media.discordapp.net/attachments/883626663160729601/1051036455079772160/IMG_20221210_125315.png"
             className="square rounded me-1"
-            style={{ width: "4rem", height: "4rem" }}
+            style={{ width: "3rem", height: "3rem" }}
           />
           
         </a>
@@ -65,10 +66,10 @@ const popover = (
           class="d-inline-block py-2 p-1 text-decoration-none"
         >
           <img
-            alt="Anjali-img"
-            src="https://t4.ftcdn.net/jpg/02/45/28/17/360_F_245281721_2uYVgLSFnaH9AlZ1WWpkZavIcEEGBU84.jpg"
-            className="me-1"
-            style={{ width: "1.5rem", height: "1.5rem" }}
+            alt="anjali-img"
+            src={anjaliImg}
+            className="rounded-circle me-1"
+            style={{ width: "1.8rem", height: "1.8rem" }}
           />
           Anjali
         </a>
