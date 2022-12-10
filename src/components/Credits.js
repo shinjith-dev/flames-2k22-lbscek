@@ -8,25 +8,6 @@ const popover = (
   <Popover id="popover-basic">
     <Popover.Body className="py-1 px-2">
       <div className="text-center mb-1">
-        <div className="py-1 mb-1 d-flex">
-          <img
-            alt="TinkerHub Logo"
-            src={unionLogo}
-            className="rounded me-1"
-            style={{ height: "4rem" }}
-          />
-          <div
-            className="d-inline p-0 d-flex flex-column align-items-center justify-content-center"
-            style={{ width: "10rem" }}
-          >
-            <p className="fw-bolder mb-0 d-inline" style={{ fontSize: "1rem" }}>
-              College Union 2022
-            </p>{" "}
-            <p className="fw-bolder mb-0 d-inline" style={{ fontSize: "0.8rem" }}>
-              LBSCEK
-            </p>
-          </div>
-        </div>
         <p className="text-center mb-0 fw-bold">In collaboration with</p>
         <div>
           {" "}
@@ -54,6 +35,18 @@ const popover = (
               style={{ width: "3rem", height: "3rem" }}
             />
           </a>
+          <a
+            href="https://instagram.com/tinkerhub.lbscek"
+            class="d-inline-block py-2 p-1 text-decoration-none"
+            title="Tinkerhub LBSCEK"
+          >
+            <img
+              alt="TinkerHub Logo"
+              src={unionLogo}
+              className="rounded square me-1"
+              style={{ width: "3rem", height: "3rem" }}
+            />
+            </a>
         </div>
       </div>
 
