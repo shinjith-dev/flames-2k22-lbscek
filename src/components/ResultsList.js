@@ -4,7 +4,6 @@ import Badge from "react-bootstrap/Badge";
 import getData from "../services/getData";
 import ResultPopup from "./ResultPopup";
 import { Button, Spinner } from "react-bootstrap";
-import './loading.css'
 
 const ResultsList = ({ type = "men" }) => {
   const [results, setResults] = useState([]);
@@ -51,10 +50,11 @@ const ResultsList = ({ type = "men" }) => {
           <ListGroup as="ul">
             <ListGroup.Item
               as="li"
-              className="d-flex justify-content-between align-items-star bg-dark text-light"
+              className="d-flex justify-content-between align-items-start"
+              variant="dark"
             >
-              <div className="ms-4">ITEM</div>
-              <div className="me-4">RESULTS</div>
+              <div className="fw-bold ms-3">ITEM</div>
+              <div className="fw-bold me-3">RESULTS</div>
             </ListGroup.Item>
             {results.length > 0 ? (
               results.map((result, index) => (
@@ -72,19 +72,14 @@ const ResultsList = ({ type = "men" }) => {
                   </Badge> */}
                   <div>
                     <Button
-                    onClick={onItemClick}
-                    id={`resultListItem-${index}`}
+                      onClick={onItemClick}
+                      id={`resultListItem-${index}`}
                       variant="link"
                       className="link-dark me-2"
                       disabled={result[1] === "Nil"}
                     >
                       {result[1] === "Nil" ? "Pending" : "Show Winners"}
                     </Button>
-                    {/* <div class="lds-facebook">
-                      <div></div>
-                      <div></div>
-                      <div></div>
-                    </div> */}
                   </div>
                 </ListGroup.Item>
               ))
