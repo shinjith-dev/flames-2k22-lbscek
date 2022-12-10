@@ -66,8 +66,8 @@ const popover = (
         >
           <img
             alt="Anjali-img"
-            src="https://t4.ftcdn.net/jpg/02/45/28/17/360_F_245281721_2uYVgLSFnaH9AlZ1WWpkZavIcEEGBU84.jpg"
-            className="me-1"
+            src="https://media.discordapp.net/attachments/1051051055460405248/1051051671112921089/IMG_20221210_135317.jpg"
+            className="rounded-circle me-1"
             style={{ width: "1.5rem", height: "1.5rem" }}
           />
           Anjali
@@ -77,9 +77,9 @@ const popover = (
           class="d-inline-block py-2 p-1 text-decoration-none"
         >
           <img
-            alt="Anjali-img"
-            src="https://t4.ftcdn.net/jpg/02/45/28/17/360_F_245281721_2uYVgLSFnaH9AlZ1WWpkZavIcEEGBU84.jpg"
-            className="me-1"
+            alt="Diya-img"
+            src="https://media.discordapp.net/attachments/1051051055460405248/1051051113492795462/IMG_20221210_134952.jpg"
+            className="rounded-circle me-1"
             style={{ width: "1.5rem", height: "1.5rem" }}
           />
           Diya
