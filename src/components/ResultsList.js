@@ -53,8 +53,8 @@ const ResultsList = ({ type = "men" }) => {
               className="d-flex justify-content-between align-items-start"
               variant="dark"
             >
-              <div className="fw-bold ms-3">ITEM</div>
-              <div className="fw-bold me-3">RESULTS</div>
+              <div className="fw-bold ms-lg-3">ITEM</div>
+              <div className="fw-bold me-lg-3">RESULTS</div>
             </ListGroup.Item>
             {results.length > 0 ? (
               results.map((result, index) => (
@@ -66,21 +66,16 @@ const ResultsList = ({ type = "men" }) => {
                   as="li"
                   className="d-flex justify-content-between align-items-start"
                 >
-                  <div className="fw-bold ms-2">{result[0]}</div>
-                  {/* <Badge bg="dark" pill>
-                    {result[1] === "Nil" ? "Pending" : "Completed"}
-                  </Badge> */}
-                  <div>
+                  <div className="fw-bold ms-lg-2">{result[0]}</div>
                     <Button
                       onClick={onItemClick}
                       id={`resultListItem-${index}`}
                       variant="link"
-                      className="link-dark me-2"
+                      className="link-dark me-lg-2"
                       disabled={result[1] === "Nil"}
                     >
                       {result[1] === "Nil" ? "Pending" : "Show Winners"}
                     </Button>
-                  </div>
                 </ListGroup.Item>
               ))
             ) : (
