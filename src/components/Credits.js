@@ -7,7 +7,7 @@ const popover = (
   <Popover id="popover-basic">
     <Popover.Body>
       <div className="text-center mb-1">
-      <strong>Created in collaboration with</strong>
+      <strong>Made in collaboration with</strong>
       <a
           href="https://instagram.com/tinkerhub.lbscek"
           class="d-inline-block py-2 p-1 text-decoration-none"
@@ -27,14 +27,14 @@ const popover = (
           <img
             alt="Mulearn Logo"
             src="https://media.discordapp.net/attachments/883626663160729601/1051036455079772160/IMG_20221210_125315.png"
-            className="rounded-rectangle me-1"
+            className="square rounded me-1"
             style={{ width: "4rem", height: "4rem" }}
           />
           
         </a>
       </div>
 
-      <p className="text-center mb-0">Contributors:</p>
+      <p className="text-center mb-0"><strong>Contributors:</strong></p>
       <div className="text-center">
         <a
           href="https://github.com/the3plet/"
@@ -61,13 +61,13 @@ const popover = (
           Shinjith
         </a>
         <a
-          href="https://github.com/shinjith-dev/"
+          href="#"
           class="d-inline-block py-2 p-1 text-decoration-none"
         >
           <img
             alt="Anjali-img"
             src="https://t4.ftcdn.net/jpg/02/45/28/17/360_F_245281721_2uYVgLSFnaH9AlZ1WWpkZavIcEEGBU84.jpg"
-            className="rounded-circle me-1"
+            className="me-1"
             style={{ width: "1.5rem", height: "1.5rem" }}
           />
           Anjali
