@@ -73,6 +73,18 @@ const popover = (
           />
           Anjali
         </a>
+        <a
+          href="#"
+          class="d-inline-block py-2 p-1 text-decoration-none"
+        >
+          <img
+            alt="Diya-img"
+            src="https://media.discordapp.net/attachments/1051051055460405248/1051051113492795462/IMG_20221210_134952.jpg"
+            className="rounded-circle me-1"
+            style={{ width: "1.5rem", height: "1.5rem" }}
+          />
+          Diya
+        </a>
        
       </div>
     </Popover.Body>
