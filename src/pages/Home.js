@@ -17,7 +17,7 @@ const Home = () => {
           <p>-----</p>
         </div> */}
         <RunningAnimation/>
-        <div className="h1 text-center fw-bold mb-1" style={{fontSize:"3rem"}}>FLAMES'22</div>
+        <div className="h1 text-center fw-bold mb-1" style={{fontSize:"3rem"}}>FLAMES '22</div>
         <p className="fw-light text-center fs-6 mb-0">Annual Athletic Meet</p>
         <p className="fw-lighter text-center " style={{fontSize:"0.8rem"}}>COLLEGE UNION 2022 LBSCEK</p>
       </div>
