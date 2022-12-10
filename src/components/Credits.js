@@ -20,7 +20,7 @@ const popover = (
 
 const CreditPopup = () => (
   <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-    <p class="fw-light d-flex justify-content-center mx-auto fs-10">Credits &#x1F60B;</p>
+    <p class="fw-lighter d-flex justify-content-center mx-auto fs-10">Credits &#x1F60B;</p>
   </OverlayTrigger>
 );
 
