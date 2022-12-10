@@ -72,6 +72,18 @@ const popover = (
           />
           Anjali
         </a>
+        <a
+          href="#"
+          class="d-inline-block py-2 p-1 text-decoration-none"
+        >
+          <img
+            alt="Anjali-img"
+            src="https://t4.ftcdn.net/jpg/02/45/28/17/360_F_245281721_2uYVgLSFnaH9AlZ1WWpkZavIcEEGBU84.jpg"
+            className="me-1"
+            style={{ width: "1.5rem", height: "1.5rem" }}
+          />
+          Diya
+        </a>
        
       </div>
     </Popover.Body>
