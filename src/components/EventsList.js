@@ -1,7 +1,6 @@
 import React from "react";
 import ListGroup from "react-bootstrap/ListGroup";
 import data from "../data";
-import { useEffect } from "react";
 
 const list = data;
 

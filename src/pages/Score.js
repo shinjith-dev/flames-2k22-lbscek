@@ -8,14 +8,16 @@ const Score = () => {
   const [scores, setScores] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
   useEffect(() => {
     getData("score").then((data) => {
       if (data !== null) {
+        const filtered = data.filter((item, index) => index !== 0);
         setScores(
-          data.filter((item, index) => index !== 0).sort((a, b) => a[2] < b[2])
+          filtered.sort((a, b) => {
+            return Number(b[2]) - Number(a[2]);
+          })
         );
-        setLoading(false)
+        setLoading(false);
       }
     });
   }, []);
@@ -39,14 +41,17 @@ const Score = () => {
                 </tr>
               </thead>
               <tbody>
-                {scores.length > 0 ?
+                {scores.length > 0 ? (
                   scores.map((score, index) => (
                     <tr key={score[1]}>
                       <td>{index + 1}</td>
                       <td>{score[1]}</td>
                       <td>{score[2]}</td>
                     </tr>
-                  )):<p>No data</p>}
+                  ))
+                ) : (
+                  <p>No data</p>
+                )}
               </tbody>
             </Table>
           </Container>
