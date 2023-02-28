@@ -1,6 +1,6 @@
 Flames 2k22
 # Flames 2k22
-## Annual Athletic Meeet
+## Annual Athletic Meet
 
 
 
